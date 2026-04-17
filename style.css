@@ -5,53 +5,60 @@
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    /*cor em hexadecimal*/
+    margin: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;       
+    background-color: #000000b9;/*cor em hexadecimal*/
+    padding: 20px;/*alterei o padding 16/04*/
+    
 }
-
 header {
-    background-color: #c0c0c0;
+    background-color: #a70c0ce7;
     /*cinza cocô kkkk*/
-    color: #ffff;
+    color: #ffffff;
     /*branco em hexadecimal*/
     padding: 20px;
     text-align: center;
     /*centraliza o texto*/
+     border-radius: 6px;
+     border-top: 2px solid rgb(8, 2, 8);
 }
 
 nav a {
     /*nav navigation a a, de link, vou trabalhar só no link*/
-    color: blue;
+    color: rgb(236, 236, 236);
     text-decoration: none;
     /*remove o sublinhado dos links / tirei toda a decoração do texto*/
     padding: 4px;
+    border-top-left-radius: 10px; /*bordas arredondadas só na parte superior*/
+    border-top-right-radius: 10px; /*bordas arredondadas só na parte superior*/
+    background-color: #751e1e; /*cor de fundo do link, cor cinza escuro com transparência*/
+    border-bottom-color: #d8d;
+
 }
 
 .bloco {
     /*declaração de class, a class procede de "."*/
-    background-color: #cccc;
+    background-color: #a70c0ce7;
     /*cor branca em hexadecimal*/
-    color: black;
+    color: rgb(255, 255, 255); 
     border: 1px dotted #a3a3;
     /*borda pontilhada, borda geraç tracejada*/
     ;
-    border-radius: 6px;
+    border-radius: 6px; 
     /*borda arredondada*/
     padding: 16px;
     margin-bottom: 16px;
-    border-top: 2px solid #d8d;
+    border-top: 2px solid rgb(8, 2, 8); /*borda superior sólida, cor preta em rgb*/
     /*borda superior sólida, cor rosa em hexadecimal*/
-    ;
 }
 
 #galeria { /* # significa id, onde coloca-se por ex: id="galeria" só pode ter 1 com mesmo nome por pagina*/
     display: flex;
     flex-wrap: wrap;
     gap: 24px; /*espaçamento entre os elementos dentro do id*/
-    justify-content: flex-start; /*reforçando que ele vai estar "flexivel"*/
+    justify-content: center; /* centraliza horizontalmente */
     padding: 20px;
+    color: #000000;
 
 }
 
@@ -62,7 +69,7 @@ nav a {
     box-shadow: 0 4px 10px #000000;
     width: 220px; /*largura*/
     text-align: 4px; /*alinhamento do texto*/
-    border-radius: 4px;
+    border-radius: 4px; 
 }
 
 .foto img {
@@ -70,4 +77,32 @@ nav a {
     height: 220px;
     object-fit: cover;  /*efeito de sobrepor*/
     display: block;
+}
+.foto:hover{
+    transform: scale(1.50) rotate(2deg) 
+    /*efeito de zoom ao passar o mouse*/
+}
+.legenda{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:  18px;
+    font-style: italic;
+    color:#000000;
+}   
+footer {
+    background-color: #a70c0ce7;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border-top: 3px solid rgb(8, 2, 8);
+}
+.detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; /*espaçamento entre os elementos dentro do id*/
+    justify-content: center; /* centraliza horizontalmente */
+    padding: 20px;
+    color: #000000;
 }
